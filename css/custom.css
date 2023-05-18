@@ -19,7 +19,8 @@
 */
 
 body {
-    background-color: rgba(182, 231, 243, 1.0);
+    background-image: radial-gradient(var(--grad-center), var(--grad-edge));
+    height: 100vh;
 }
 
 .main_contents {
@@ -170,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
     /* CSS rule to overwrite the navbar-brand font hover color
     */
     .navbar_coca_cola .navbar-brand:hover {
-        color: green;
+        color: rgb(140, 35, 35);
     }
 
     /* NAVIGATION MENU
@@ -188,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
     */
     .navbar_coca_cola .navbar-nav > li > a:hover, 
     .navbar_coca_cola .navbar-nav > li > a:focus {
-        color: green;  
+        color: #6f0909;  
     }
 
     .navbar_coca_cola .navbar-nav .nav-item {
@@ -200,8 +201,8 @@ h1, h2, h3, h4, h5, h6 {
     .navbar_coca_cola .navbar-nav .nav-item > .active, 
     .navbar_coca_cola .navbar-nav > .active > a:hover, 
     .navbar_coca_cola .navbar-nav > .active > a:focus {
-        color:  #760003; /* Font color for active font */
-        background-color: #3399ff; /* Blue color for background */
+        color:  #ffdcdd; /* Font color for active font */
+        background-color: #6f0909; /* Blue color for background */
     }
 
     /* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
@@ -211,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
     */
     .navbar_coca_cola .navbar-nav > li > a:hover, 
     .navbar_coca_cola  .navbar-nav > li > a:focus {
-        color: green;  
+        color: #6f0909;  
     }
 
     /* These next two CSS rules control the style of the icon bar */
@@ -274,32 +275,32 @@ h1, h2, h3, h4, h5, h6 {
 
     .fa-twitter-square:before {
         content: "\f081";
-        color: green;
+        color: rgb(0, 0, 0);
         font-size: 1em;
     }
 
     .fa-github-square:before {
         content: "\f092"; 
-        color: yellow;
+        color: rgb(0, 0, 0);
         font-size: 1em;
     }
 
     .fa-google-plus-square:before {
         content: "\f0d4"; 
-        color: blue;
+        color: rgb(0, 0, 0);
         font-size: 1em;
     }
 
     .fa-facebook-square:before {
         content: "\f082";
-        color: red;
+        color: rgb(0, 0, 0);
         font-size: 1em; 
     }
     
     /* Lifted form the bootsrap.css file, and modified to emulate the nav-bar menu styling */
     .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-        color:  #760003; /* Font color for active font */
-        background-color: #3399ff; /* Blue color for background */
+        color:  #ffeeef; /* Font color for active font */
+        background-color: #bf0303; /* Blue color for background */
         border-color: #dee2e6 #dee2e6 #fff;
     }
 
@@ -312,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Added this to emulate the nav-bar link styling */
     .nav-tabs .nav-link:hover {
-        color: green;
+        color: rgb(157, 5, 5);
         border: 1px solid transparent;
     }
 
@@ -398,13 +399,15 @@ h1, h2, h3, h4, h5, h6 {
         
     }
 
+    .row {
+        width: 95%;
+    }
+
 /* Small devices (landscape phones, 576px and up)
 */
 @media (min-width: 576px) {
 
-    body {
-        background-color: rgb(202, 181, 181);
-    }
+
 
     #main_3d_image {
         background-image: url(../assets/images/site_images/main_3D_768.jpg);
@@ -446,13 +449,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar_coca_cola {
-        background-color: grey; 
+        background-color: rgb(0, 0, 0); 
         min-height: 90px;
     }
 
     /* CSS rule to style the footer */
     .footer {
-        background-color: #94d874; 
+        background-color: #fba0a0; 
         height: 60px;
     }
 
@@ -478,15 +481,19 @@ h1, h2, h3, h4, h5, h6 {
         height: 200px;
     }
 
+    .video_border {
+        border: 10px solid #ffffff;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px #888888;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up)
 */
 @media (min-width: 768px) { 
     
-    body {
-        background-color: rgb(218, 216, 148);
-    }
+
 
     #main_3d_image {
         background-image: url(../assets/images/site_images/main_3D_970.jpg);
@@ -590,13 +597,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar_coca_cola {
-        background-color: grey; 
+        background-color: rgb(0, 0, 0); 
         min-height: 90px;
     }
 
     /* CSS rule to style the footer */
     .footer {
-        background-color: #b890b1;
+        background-color: #fba0a0;
         height: 60px;
     }
 
@@ -625,10 +632,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Large devices (desktops, 992px and up)
 */
 @media (min-width: 992px) { 
-    
-    body {
-        background-color: rgb(185, 185, 178);
-    }
+
 
     #main_3d_image {
         background-image: url(../assets/images/site_images/main_3D_1400.jpg);
@@ -659,7 +663,7 @@ h1, h2, h3, h4, h5, h6 {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(185, 185, 178);
+        background-color: rgb(239, 224, 224);
     }
 
     .logo {
@@ -707,13 +711,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar_coca_cola {
-        background-color: grey; 
+        background-color: rgb(0, 0, 0); 
         min-height: 120px;
     }
 
     /* CSS rule to style the footer */
     .footer {
-        background-color: grey;
+        background-color: #fba0a0;
         height: 75px;
     }
 
